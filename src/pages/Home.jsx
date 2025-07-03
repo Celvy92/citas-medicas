@@ -1,24 +1,20 @@
-import React from "react";
+import gestionImg from "../assets/gestion-medica.jpg";
+import "../App.css";
 
 export default function Home() {
   return (
-    <section>
-      <h1>Bienvenido a la Plataforma de Gestión de Citas Médicas</h1>
-      <p>
-        Esta aplicación te permite gestionar tus citas médicas de manera sencilla y eficiente.
-      </p>
-      <p>
-        Navega a través de las pestañas para:
-      </p>
-      <ul>
-        <li>Ver y administrar tus citas.</li>
-        <li>Registrar y consultar datos de pacientes.</li>
-      </ul>
-      <img
-        src="https://images.unsplash.com/photo-1588776814546-0f0c53f54d11?auto=format&fit=crop&w=800&q=60"
-        alt="Gestión médica"
-        style={{ width: "100%", borderRadius: "10px", marginTop: "1rem" }}
-      />
+    <section className="home-container">
+      <div className="home-content">
+        <h1 className="titulo-home">Bienvenido a la Plataforma de Gestión de Citas Médicas</h1>
+        <p className="descripcion-home">
+          Organiza, gestiona y administra tus citas médicas con eficiencia. Navega por el menú para comenzar.
+        </p>
+
+        {/* Esta es la línea que debes modificar */}
+        <div className="home-image">
+          <img src={gestionImg} alt="Gestión Médica" />
+        </div>
+      </div>
     </section>
   );
 }
