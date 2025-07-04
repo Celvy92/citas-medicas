@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route, NavLink } from "react-router-dom";
 import Home from "./pages/Home";
 import Citas from "./pages/Citas";
 import Paciente from "./pages/Paciente";
-
+import PacienteDetalle from "./pages/PacienteDetalle";
 import "./App.css";
 
 export default function App() {
@@ -22,6 +22,7 @@ export default function App() {
           <Route path="/" element={<Home />} />
           <Route path="/citas" element={<Citas />} />
           <Route path="/paciente" element={<Paciente />} />
+          <Route path="/paciente/:id" element={<PacienteDetalle />} />
         </Routes>
       </main>
 

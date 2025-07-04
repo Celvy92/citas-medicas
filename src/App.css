@@ -91,6 +91,8 @@ button {
   cursor: pointer;
   margin-top: 1rem;
   transition: background 0.3s ease;
+  display: inline-block;
+  margin-top: 1rem;
 }
 
 button:hover {
